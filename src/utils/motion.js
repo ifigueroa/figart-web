@@ -177,3 +177,30 @@ export const svgVariants = {
     duration: 1.5,
   },
 };
+
+export const ulVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+      duration: 2,
+    },
+  },
+  exit: {
+    opacity: 0,
+  },
+};
+
+export const listVariants = {
+  hidden: {
+    x: "-100vw",
+  },
+  visible: {
+    x: 0,
+    transition: { duration: 0.2, type: "spring", damping: 15 },
+  },
+  exit: {
+    x: "-100vw",
+    transition: { duration: 0.5 },
+  },
+};

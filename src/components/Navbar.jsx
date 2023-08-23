@@ -10,7 +10,7 @@ import Logo from "../../public/images/logo.png";
 import Image from "next/image";
 import LanguageSelect from "./LanguageSelect";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [toggle, setToggle] = useState(false);
   let [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
@@ -64,7 +64,7 @@ const Navbar = () => {
                 href="#our-work"
                 className=" group cursor-pointer relative  pb-2 overflow-hidden"
               >
-                Our work
+                {props.item2}
                 <span className=" absolute h-0.5 bg-artman-blue-100 w-full left-0 bottom-0 scale-0 group-hover:scale-100  group-hover:origin-left origin-right transition-transform duration-300 ease-out"></span>
               </a>
             </motion.li>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 href="#about"
                 className=" group cursor-pointer relative  pb-2 overflow-hidden"
               >
-                About us
+                {props.item3}
                 <span className=" absolute h-0.5 bg-artman-blue-100 w-full left-0 bottom-0 scale-0 group-hover:scale-100  group-hover:origin-left origin-right transition-transform duration-300 ease-out"></span>
               </a>
             </motion.li>
@@ -97,7 +97,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
 
       <CloseBtn toggle={toggle} setToggle={setToggle} />
-      <MobileMenu toggle={toggle} setToggle={setToggle} openModal={openModal} />
+      <MobileMenu toggle={toggle} setToggle={setToggle} openModal={openModal} props={props} />
       <ContactModal isOpen={isOpen} closeModal={closeModal} />
     </nav>
   );

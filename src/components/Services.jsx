@@ -3,39 +3,36 @@ import MixingIcon from "./UI/MixingIcon";
 import MasteringIcon from "./UI/MasteringIcon";
 import StemsIcon from "./UI/StemsIcon";
 import { motion } from "framer-motion";
-import {
-  fadeIn,
-  staggerContainer,
-} from "@/utils/motion";
+import { fadeIn, staggerContainer } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
-import ServicesPhoto from "../../public/images/artman-studio-services.jpg"
+import ServicesPhoto from "../../public/images/artman-studio-services.jpg";
 import Image from "next/image";
 
-const services = [
-  {
-    id: 1,
-    name: "Mixing (from 400€/project)",
-    description:
-      "Your individual tracks come together to create a harmonious masterpiece. Each element is meticulously blended to achieve a balanced and immersive sonic experience. We ensure that every instrument finds its perfect place in the mix.",
-    icon: MixingIcon,
-  },
-  {
-    id: 2,
-    name: "Mastering (60€/track)",
-    description:
-      "Whether you're preparing tracks for distribution, radio play, or streaming platforms, our precise adjustments ensure a polished and professional sound across various playback systems.",
-    icon: MasteringIcon,
-  },
-  {
-    id: 3,
-    name: "Stem mastering (20€/stem)",
-    description:
-      "Stem mastering empowers you to shape your music's elements individually, offering a level of customization that standard mastering can't achieve.",
-    icon: StemsIcon,
-  },
-];
+const Services = (props) => {
+  const services = [
+    {
+      id: 1,
+      name: "Mixing (from 400€/project)",
+      description:
+        "Your individual tracks come together to create a harmonious masterpiece. Each element is meticulously blended to achieve a balanced and immersive sonic experience. We ensure that every instrument finds its perfect place in the mix.",
+      icon: MixingIcon,
+    },
+    {
+      id: 2,
+      name: "Mastering (60€/track)",
+      description:
+        "Whether you're preparing tracks for distribution, radio play, or streaming platforms, our precise adjustments ensure a polished and professional sound across various playback systems.",
+      icon: MasteringIcon,
+    },
+    {
+      id: 3,
+      name: "Stem mastering (20€/stem)",
+      description:
+        "Stem mastering empowers you to shape your music's elements individually, offering a level of customization that standard mastering can't achieve.",
+      icon: StemsIcon,
+    },
+  ];
 
-const Services = () => {
   return (
     <section id="services">
       <div className="overflow-hidden pt-12 lg:py-32">
@@ -53,10 +50,10 @@ const Services = () => {
                   className="text-base font-semibold leading-7 text-artman-blue-700"
                   variants={fadeIn("down", "tween", 0.7, 1.5)}
                 >
-                  Sound your best
+                  {props.aboveTitle}
                 </motion.p>
                 <TypingTitle
-                  title="What we do"
+                  title={props.title}
                   textStyles="mt-2 text-3xl font-bold tracking-tight text-artblack sm:text-4xl"
                 />
                 <motion.p
@@ -93,8 +90,11 @@ const Services = () => {
               viewport={{ once: false, amount: 0.25 }}
               variants={fadeIn("left", "spring", 0, 1)}
             >
-              <Image src={ServicesPhoto} alt="Artman Enternainment Studio"
-                className="w-[48rem] hidden sm:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-right "  />
+              <Image
+                src={ServicesPhoto}
+                alt="Artman Enternainment Studio"
+                className="w-[48rem] hidden sm:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-right "
+              />
             </motion.div>
           </div>
         </div>

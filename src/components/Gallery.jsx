@@ -53,7 +53,7 @@ const Gallery = () => {
         ))}
       </div>
 
-      <div className=" flex flex-col animate-sm-gallery-move min-[426px]:animate-gallery-move  ">
+      <div className=" flex flex-col animate-sm-gallery-move min-[426px]:animate-gallery-move pt-20 min-[426px]:pt-40 ">
       {spotifyDataR.map((single, i) => (
           <a
           target="_blank"

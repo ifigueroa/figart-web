@@ -1,35 +1,9 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSelect from "./LanguageSelect";
+import { ulVariants, listVariants } from "@/utils/motion";
 
-const ulVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1,
-      duration: 2,
-    },
-  },
-  exit: {
-    opacity: 0,
-  },
-};
-
-const listVariants = {
-  hidden: {
-    x: "-100vw",
-  },
-  visible: {
-    x: 0,
-    transition: { duration: 0.2, type: "spring", damping: 15 },
-  },
-  exit: {
-    x: "-100vw",
-    transition: { duration: 0.5 },
-  },
-};
-
-const MobileMenu = ({ toggle, setToggle, openModal }) => {
+const MobileMenu = ({ toggle, setToggle, openModal, props }) => {
   const closeMenu = () => {
     setToggle(!toggle);
   };
@@ -60,7 +34,7 @@ const MobileMenu = ({ toggle, setToggle, openModal }) => {
               key="ourwork"
             >
               <a href="#our-work" className=" ml-4 w-full" onClick={closeMenu}>
-                Our work
+                {props.mobileItem2}
               </a>
             </motion.li>
             <motion.li
@@ -73,7 +47,7 @@ const MobileMenu = ({ toggle, setToggle, openModal }) => {
                 className=" ml-4 w-full "
                 onClick={closeMenu}
               >
-                About us
+                {props.mobileItem3}
               </a>
             </motion.li>
             <motion.li

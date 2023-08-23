@@ -39,20 +39,20 @@ module.exports = {
     },
     keyframes: {
       "gallery-move": {
-        "0%, 100%": { transform: "translateY(-600px)" },
-        "50%": { transform: "translateY(0)"},
+        "0% ": { transform: "translateY(-800px)" },
+        "100%": { transform: "translateY(-180px)"},
       },
       "gallery-move2": {
-        "0%, 100%": { transform: "translateY(0)" },
-        "50%": { transform: "translateY(-600px)"},
+        "0%": { transform: "translateY(-180px)" },
+        "100%": { transform: "translateY(-800px)"},
       },
       "sm-gallery-move": {
-        "0%, 100%": { transform: "translateY(-200px)" },
-        "50%": { transform: "translateY(0)"},
+        "0% ": { transform: "translateY(-400px)" },
+        "100%": { transform: "translateY(-90px)"},
       },
       "sm-gallery-move2": {
-        "0%, 100%": { transform: "translateY(0)" },
-        "50%": { transform: "translateY(-200px)"},
+        "0% ": { transform: "translateY(-90px)" },
+        "100%": { transform: "translateY(-400px)"},
       },
       "fade-in":{
         "0%": { opacity:0 },
@@ -72,8 +72,8 @@ module.exports = {
     animation: {
       "gallery-move": "gallery-move 60s ease infinite ",
       "gallery-move2": "gallery-move2 60s ease infinite ",
-      "sm-gallery-move": "sm-gallery-move 60s ease infinite ",
-      "sm-gallery-move2": "sm-gallery-move2 60s ease infinite ",
+      "sm-gallery-move": "sm-gallery-move 30s ease infinite ",
+      "sm-gallery-move2": "sm-gallery-move2 30s ease infinite ",
       "slide-up-2": "slide-up 1.5s both 0.4s",
       "slide-up-3": "slide-up 1.5s both 0.6s",
       "fade-in" : "fade-in 0.5s both",

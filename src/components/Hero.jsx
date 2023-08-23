@@ -36,11 +36,11 @@ const Hero = ( props ) => {
 
           <motion.p className=" mb-12 sm:max-w-xl text-xs md:text-lg lg:text-xl text-center text-artman-blue-50   rounded-2xl ">
               <motion.span variants={textVariant(0.2)}>
-                Get your music mixed and mastered by Artman Studio.
+                {props.subTitle1}
               </motion.span>
             <br />
               <motion.span variants={textVariant(0.3)}>
-                Send your music today and take it to the next level.
+              {props.subTitle2}
               </motion.span>
           </motion.p>
           <a href="#order">
@@ -50,7 +50,7 @@ const Hero = ( props ) => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.8 }}
             >
-              Send your music
+              {props.ctaBtn}
             </motion.button>
           </a>
         </motion.article>

@@ -1,6 +1,11 @@
-
-
 export const spotifyDataL = [
+  {
+    id: "ibuyfinf",
+    name: "Soro te karaba (feat. Victor Démé)",
+    artist: "Synapson",
+    imgUrl: "https://i.scdn.co/image/ab67616d00001e027f2e6ebcd9efad89c6efe8ec",
+    trackUrl: "https://open.spotify.com/track/1a66w9JwoarISVpjCU6RBt",
+  },
   {
     id: "2PFqkHzF7R1cBttOp0jUXg",
     name: "Toujours (feat. Tim Dup & Lass)",
@@ -36,9 +41,23 @@ export const spotifyDataL = [
     imgUrl: "https://i.scdn.co/image/ab67616d00001e023d2dd875337f674af23d64fd",
     trackUrl: "https://open.spotify.com/track/6jZvUUGdaJzCrwgmZt6UO4",
   },
+  {
+    id: "2oinvrui",
+    name: "Toujours (feat. Tim Dup & Lass)",
+    artist: "Synapson",
+    imgUrl: "https://i.scdn.co/image/ab67616d00001e021eb2f3ddb3b597f5379fd933",
+    trackUrl: "https://open.spotify.com/track/2PFqkHzF7R1cBttOp0jUXg",
+  },
 ];
 
 export const spotifyDataM = [
+  {
+    id: "czeiucn",
+    name: "Fade Out Lines - Radio Edit",
+    artist: "Synapson",
+    imgUrl: "https://i.scdn.co/image/ab67616d00001e0236cd9f7b5d6b520e212633aa",
+    trackUrl: "https://open.spotify.com/track/6H3nSdUt186Z4ooh3XWGon",
+  },
   {
     id: "3hxRKXzZS0XRYGZ123JDNH",
     name: "Djon maya maï (feat. Victor Démé)",
@@ -62,11 +81,11 @@ export const spotifyDataM = [
     trackUrl: "https://open.spotify.com/track/5BiYg12l7EpFZtrvWZpkT0",
   },
   {
-    id: "0mko5sZQMfALeG2bzpWZRy",
-    name: "All in You (feat. Anna Kova)",
-    artist: "Synapson, Anna Kova",
-    imgUrl: "https://i.scdn.co/image/ab67616d00001e02de23d050cae38ec9ef979bc3",
-    trackUrl: "https://open.spotify.com/track/0mko5sZQMfALeG2bzpWZRy",
+    id: "6H3nSdUt186Z4ooh3XWGon",
+    name: "Fade Out Lines - Radio Edit",
+    artist: "Synapson",
+    imgUrl: "https://i.scdn.co/image/ab67616d00001e0236cd9f7b5d6b520e212633aa",
+    trackUrl: "https://open.spotify.com/track/6H3nSdUt186Z4ooh3XWGon",
   },
   {
     id: "3qrTtyItm5TPVpbZ3FI39C",
@@ -74,6 +93,13 @@ export const spotifyDataM = [
     artist: "Synapson",
     imgUrl: "https://i.scdn.co/image/ab67616d0000b2733d2dd875337f674af23d64fd",
     trackUrl: "https://open.spotify.com/track/3qrTtyItm5TPVpbZ3FI39C",
+  },
+  {
+    id: "cieznue",
+    name: "Mohan",
+    artist: "Synapson",
+    imgUrl: "https://i.scdn.co/image/ab67616d00001e0246636e52d1e7708a224388e2",
+    trackUrl: "https://open.spotify.com/track/2oV29Jq4nDS1aeGVPkAmmi",
   },
 ];
 
@@ -92,12 +118,13 @@ export const spotifyDataR = [
     imgUrl: "https://i.scdn.co/image/ab67616d0000b2736ac1e60f72c7ff51a0ac052e",
     trackUrl: "https://open.spotify.com/track/7eYlPmnuddJhmgbLhtfco5",
   },
+
   {
-    id: "6H3nSdUt186Z4ooh3XWGon",
-    name: "Fade Out Lines - Radio Edit",
-    artist: "Synapson",
-    imgUrl: "https://i.scdn.co/image/ab67616d00001e0236cd9f7b5d6b520e212633aa",
-    trackUrl: "https://open.spotify.com/track/6H3nSdUt186Z4ooh3XWGon",
+    id: "czec",
+    name: "All in You (feat. Anna Kova)",
+    artist: "Synapson, Anna Kova",
+    imgUrl: "https://i.scdn.co/image/ab67616d00001e02de23d050cae38ec9ef979bc3",
+    trackUrl: "https://open.spotify.com/track/0mko5sZQMfALeG2bzpWZRy",
   },
   {
     id: "217nVQTIfOook5CUyUoEZp",
@@ -112,5 +139,20 @@ export const spotifyDataR = [
     artist: "Synapson",
     imgUrl: "https://i.scdn.co/image/ab67616d00001e0244be65dc6657d7f5162790f6",
     trackUrl: "https://open.spotify.com/track/1ngOBpalUeaItHPXXez6tq",
+  },
+  {
+    id: "dazcezf",
+    name: "Waylalah - Chambord Remix",
+    artist: "Chambord, Synapson",
+    imgUrl: "https://i.scdn.co/image/ab67616d0000b2736ac1e60f72c7ff51a0ac052e",
+    trackUrl: "https://open.spotify.com/track/7eYlPmnuddJhmgbLhtfco5",
+  },
+
+  {
+    id: "chzad",
+    name: "All in You (feat. Anna Kova)",
+    artist: "Synapson, Anna Kova",
+    imgUrl: "https://i.scdn.co/image/ab67616d00001e02de23d050cae38ec9ef979bc3",
+    trackUrl: "https://open.spotify.com/track/0mko5sZQMfALeG2bzpWZRy",
   },
 ];

@@ -25,15 +25,15 @@ export default function Home() {
         <title>Artman Entertainement</title>
         <meta
           name="description"
-          content="Online music mixing, mastering and stem mastering services. Elevate your music with expert audio processing and polishing. Send your music now to achieve outstanding sound quality."
+          content={`${translation.metaData.content}`}
         />
       </Head>
       <header className="w-full z-20 h-24 flex absolute top-0 left-0 ">
-        <Navbar  />
+        <Navbar { ...translation.nav } />
       </header>
       <main>
         <Hero { ...translation.hero } />
-        <Services />
+        <Services { ...translation.services } />
         <OurWork />
         <Order />
         <AboutUs />
