@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import MixingIcon from "./UI/MixingIcon";
 import MasteringIcon from "./UI/MasteringIcon";
@@ -9,6 +8,8 @@ import {
   staggerContainer,
 } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
+import ServicesPhoto from "../../public/images/artman-studio-services.jpg"
+import Image from "next/image";
 
 const services = [
   {
@@ -92,11 +93,8 @@ const Services = () => {
               viewport={{ once: false, amount: 0.25 }}
               variants={fadeIn("left", "spring", 0, 1)}
             >
-              <img
-                src="/images/artman-studio-p-com.jpg"
-                alt="Product screenshot"
-                className="w-[48rem] hidden sm:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-right "
-              />
+              <Image src={ServicesPhoto} alt="Artman Enternainment Studio"
+                className="w-[48rem] hidden sm:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-right "  />
             </motion.div>
           </div>
         </div>

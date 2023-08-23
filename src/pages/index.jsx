@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Services from "@/components/Services";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
@@ -20,6 +21,7 @@ export default function Home() {
       </header>
       <main>
         <Hero />
+        <Services />
       </main>
     </>
   );
