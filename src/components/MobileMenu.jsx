@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import LanguageSelect from "./LanguageSelect";
 
 const ulVariants = {
   hidden: {},
@@ -83,6 +84,13 @@ const MobileMenu = ({ toggle, setToggle, openModal }) => {
               <a href="#" className=" ml-4 w-full" onClick={openModal}>
                 Contact
               </a>
+            </motion.li>
+            <motion.li
+              className=" flex items-center h-24 active:bg-artman-blue-900"
+              variants={listVariants}
+              key="lang"
+            >
+              <LanguageSelect styles="ml-4 " />
             </motion.li>
           </motion.ul>
         </motion.div>
