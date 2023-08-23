@@ -60,7 +60,7 @@ const Services = (props) => {
                   className="mt-6 text-lg leading-8 text-artman-blue-900"
                   variants={fadeIn("left", "tween", 0.8, 1.5)}
                 >
-                  Unleash the full potential of your music
+                  {props.subTitle}
                 </motion.p>
                 <div className="mt-10 max-w-xl space-y-8 text-base leading-7 text-artman-blue-900 lg:max-w-none">
                   {services.map((service, i) => (

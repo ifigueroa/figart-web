@@ -24,8 +24,20 @@ export default {
       "Whether you're preparing tracks for distribution, radio play, or streaming platforms, our precise adjustments ensure a polished and professional sound across various playback systems.",
     service3:
       "Stem mastering empowers you to shape your music's elements individually, offering a level of customization that standard mastering can't achieve.",
-      title: "What we do",
-      aboveTitle: "Sound your best",
-       subTitle: " Unleash the full potential of your music"
+    title: "What we do",
+    aboveTitle: "Sound your best",
+    subTitle: " Unleash the full potential of your music",
   },
+  portfolio: {
+
+  },
+  order : {
+
+  },
+  aboutUs: {
+
+  },
+  footer: {
+    
+  }
 };

@@ -34,10 +34,10 @@ export default function Home() {
       <main>
         <Hero { ...translation.hero } />
         <Services { ...translation.services } />
-        <OurWork />
-        <Order />
-        <AboutUs />
-        <Footer />
+        <OurWork { ...translation.portfolio }/>
+        <Order { ...translation.order }/>
+        <AboutUs { ...translation.aboutUs }/>
+        <Footer { ...translation.footer }/>
       </main>
     </>
   );
