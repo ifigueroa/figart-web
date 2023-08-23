@@ -5,7 +5,8 @@ import { staggerContainer, textVariant } from "@/utils/motion";
 import Image from "next/image";
 import Banner from "../../public/images/artman-studio-banner.jpg"
 
-const Hero = () => {
+const Hero = ( props ) => {
+  console.log(props)
   return (
     <section>
       <div className="  relative w-full h-screen  ">
@@ -30,7 +31,7 @@ const Hero = () => {
               className="text-4xl sm:text-5xl lg:text-6xl font-artinter text-artman-gold-50 text-center font-bold  "
               variants={textVariant(0.1)}
             >
-              Online mixing and mastering
+              {props.title}
             </motion.h1>
           </div>
 

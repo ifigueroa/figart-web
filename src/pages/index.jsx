@@ -6,10 +6,18 @@ import Order from "@/components/Order";
 import Services from "@/components/Services";
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import { useRouter } from 'next/router';
+import en from '../locales/en';
+import fr from '../locales/fr';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+  const router = useRouter();
+  const { locale } = router;
+  const translation = locale === 'fr' ? fr : en;
+
   return (
     <>
       <Head>
@@ -20,10 +28,10 @@ export default function Home() {
         />
       </Head>
       <header className="w-full z-20 h-24 flex absolute top-0 left-0 ">
-        <Navbar />
+        <Navbar  />
       </header>
       <main>
-        <Hero />
+        <Hero { ...translation.hero } />
         <Services />
         <Order />
         <AboutUs />
