@@ -48,7 +48,7 @@ const Gallery = () => {
       {discography.map((single, i) => (
           <a
             target="_blank"
-            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
+            className="   shadow-md   overflow-hidden h-[100px] w-[100px] min-[376px]:w-[120px] min-[376px]:h-[120px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
             href="https://open.spotify.com/track/3fmXrzV5KtCIuvQM7WhnbO?si=73452079c592410d"
             key={i}
           >
@@ -70,11 +70,11 @@ const Gallery = () => {
         ))}
       </div>
 
-      <div className=" flex flex-col animate-sm-gallery-move2  min-[426px]:animate-gallery-move2 ">
+      <div className=" flex flex-col animate-sm-gallery-move2 min-[426px]:animate-gallery-move2  ">
       {discography.map((single, i) => (
           <a
             target="_blank"
-            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
+            className="   shadow-md   overflow-hidden h-[100px] w-[100px] min-[376px]:w-[120px] min-[376px]:h-[120px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
             href="https://open.spotify.com/track/3fmXrzV5KtCIuvQM7WhnbO?si=73452079c592410d"
             key={i}
           >
@@ -100,7 +100,7 @@ const Gallery = () => {
       {discography.map((single, i) => (
           <a
             target="_blank"
-            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-2xl flex relative flex-end mb-2 "
+            className="   shadow-md   overflow-hidden h-[100px] w-[100px] min-[376px]:w-[120px] min-[376px]:h-[120px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
             href="https://open.spotify.com/track/3fmXrzV5KtCIuvQM7WhnbO?si=73452079c592410d"
             key={i}
           >
