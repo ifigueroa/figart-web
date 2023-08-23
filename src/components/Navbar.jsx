@@ -33,7 +33,7 @@ const Navbar = () => {
             toggle ? "-translate-y-0" : "-translate-y-full"
           }  transition-transform duration-500 fixed top-0 left-0 w-full h-full bg-artman-blue-950 z-0 sm:hidden `}
         />
-        <motion.div style={{ opacity }} >
+        <motion.div style={ !isOpen && { opacity }} >
           <Link href="/">
             <Image
               src={Logo}

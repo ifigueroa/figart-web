@@ -31,7 +31,7 @@ export default function Order() {
   return (
     <motion.section
       id="order"
-      className="isolate px-6 py-24 pt-12 sm:pb-32 lg:px-8 overflow-hidden "
+      className="isolate px-6 py-24 pt-12 sm:pb-32 lg:px-8 overflow-hidden  "
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
@@ -43,7 +43,7 @@ export default function Order() {
           textStyles="text-3xl font-bold tracking-tight  text-artblack sm:text-4xl"
         />
         <motion.p
-          className="mt-2 text-lg leading-8 text-artman-blue-900"
+          className="mt-6 text-lg leading-8 text-artman-blue-900"
           variants={fadeIn("left", "tween", 0, 1)}
         >
           Send us your audiofiles now. Let us know if you need mixing, mastering
@@ -54,7 +54,7 @@ export default function Order() {
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        className="mx-auto mt-6  max-w-xl "
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <motion.div variants={fadeIn("right", "spring", 0.2, 0.5)}>
