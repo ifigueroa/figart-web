@@ -52,9 +52,14 @@ module.exports = {
         "0%": { opacity:0 },
         "100%": { opacity:1 }
       },
+      // "logo": {
+      //   "0%": { transform: "translateY(-100px) rotate(180deg)", opacity:0 },
+      //   "100%": { transform: "translateY(0) rotate(0)", opacity:1 },
+        
+      // },
       "logo": {
-        "0%": { transform: "translateY(-100px) rotate(180deg)", opacity:0 },
-        "100%": { transform: "translateY(0) rotate(0)", opacity:1 },
+        "0%": { opacity:0 },
+        "100%": { opacity:1 },
         
       }
     },
@@ -64,7 +69,7 @@ module.exports = {
       "slide-up-2": "slide-up 1.5s both 0.4s",
       "slide-up-3": "slide-up 1.5s both 0.6s",
       "fade-in" : "fade-in 0.5s both",
-      "logo": "logo 1.5s both ease-out 0.2s"
+      "logo": "logo 2s both ease 0.2s"
     },
   },
   plugins: [],
