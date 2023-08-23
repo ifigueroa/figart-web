@@ -39,14 +39,20 @@ module.exports = {
     },
     keyframes: {
       "gallery-move": {
-        "0%": { transform: "translateY(0)" },
-        "50%": { transform: "translateY(100px)"},
-        "100%": { transform: "translateY(-100px)" },
+        "0%, 100%": { transform: "translateY(-600px)" },
+        "50%": { transform: "translateY(0)"},
       },
       "gallery-move2": {
-        "0%": { transform: "translateY(0)" },
-        "50%": { transform: "translateY(-100px)"},
-        "100%": { transform: "translateY(100px)" },
+        "0%, 100%": { transform: "translateY(0)" },
+        "50%": { transform: "translateY(-600px)"},
+      },
+      "sm-gallery-move": {
+        "0%, 100%": { transform: "translateY(-200px)" },
+        "50%": { transform: "translateY(0)"},
+      },
+      "sm-gallery-move2": {
+        "0%, 100%": { transform: "translateY(0)" },
+        "50%": { transform: "translateY(-200px)"},
       },
       "fade-in":{
         "0%": { opacity:0 },
@@ -64,8 +70,10 @@ module.exports = {
       }
     },
     animation: {
-      "gallery-move": "gallery-move 60s ease infinite both",
-      "gallery-move2": "gallery-move2 60s ease both",
+      "gallery-move": "gallery-move 60s ease infinite ",
+      "gallery-move2": "gallery-move2 60s ease infinite ",
+      "sm-gallery-move": "sm-gallery-move 60s ease infinite ",
+      "sm-gallery-move2": "sm-gallery-move2 60s ease infinite ",
       "slide-up-2": "slide-up 1.5s both 0.4s",
       "slide-up-3": "slide-up 1.5s both 0.6s",
       "fade-in" : "fade-in 0.5s both",

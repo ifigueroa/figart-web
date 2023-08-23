@@ -40,11 +40,11 @@ const discography = [
 
 const Gallery = () => {
   return (
-    <div className=" h-[300px] w-[90vw] sm:h-[400px] sm:w-[620px] lg:h-[500px]  rounded-xl overflow-hidden  ">
+    <div className=" h-[300px] w-[90vw] sm:h-[400px] sm:w-[620px] lg:h-[500px]  rounded-xl overflow-hidden  ring-2 ring-artman-blue-600 shadow ">
     <div className="  relative flex  items-center justify-between w-[33wv] gap-2 ">
       {/* animation below */}
 
-      <div className=" flex flex-col  ">
+      <div className=" flex flex-col animate-sm-gallery-move min-[426px]:animate-gallery-move  ">
       {discography.map((single, i) => (
           <a
             target="_blank"
@@ -70,7 +70,7 @@ const Gallery = () => {
         ))}
       </div>
 
-      <div className=" flex flex-col  ">
+      <div className=" flex flex-col animate-sm-gallery-move2  min-[426px]:animate-gallery-move2 ">
       {discography.map((single, i) => (
           <a
             target="_blank"
@@ -96,7 +96,7 @@ const Gallery = () => {
         ))}
       </div>
 
-      <div className=" flex flex-col  ">
+      <div className=" flex flex-col animate-sm-gallery-move min-[426px]:animate-gallery-move  ">
       {discography.map((single, i) => (
           <a
             target="_blank"
