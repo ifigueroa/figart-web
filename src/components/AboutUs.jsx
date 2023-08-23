@@ -1,7 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
+import Image from "next/image";
+import AboutPhoto1 from "../../public/images/about-us-photo-1.avif";
+import AboutPhoto2 from "../../public/images/about-us-photo-2.avif";
 
 const AboutUs = () => {
   return (
@@ -46,20 +50,24 @@ const AboutUs = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
         >
-          <motion.img
-            className="w-full max-h-[400px] object-cover  rounded-lg"
-            src="https://images.unsplash.com/photo-1636226489647-59ae1ba42f74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
-            alt="office content 1"
-            variants={fadeIn("down", "tween", 0.2, 1.8)}
-          />
-          <div className=" max-h-[400px]">
-            <motion.img
-              className=" h-full lg:mt-10 rounded-lg object-cover "
-              src="https://images.unsplash.com/photo-1581997743668-a2cffb2239e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="office content 2"
-              variants={fadeIn("up", "tween", 0.2, 1.8)}
+          <motion.div
+          variants={fadeIn("down", "tween", 0.2, 1.8)}
+          >
+            <Image
+              src={AboutPhoto1}
+              className="w-full max-h-[400px] object-cover  rounded-lg"
+              alt="Mixing console"
             />
-          </div>
+          </motion.div>
+          <motion.div className=" max-h-[400px]"
+          variants={fadeIn("up", "tween", 0.2, 1.8)}
+          >
+           <Image
+              src={AboutPhoto2}
+              className="w-full h-full object-cover  rounded-lg"
+              alt="Mixing console"
+            />
+          </motion.div>
         </motion.div>
       </div>
     </section>

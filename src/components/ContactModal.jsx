@@ -1,4 +1,4 @@
-"use client";
+
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
