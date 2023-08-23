@@ -9,6 +9,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import en from '../locales/en';
 import fr from '../locales/fr';
+import OurWork from "@/components/OurWork";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function Home() {
       <main>
         <Hero { ...translation.hero } />
         <Services />
+        <OurWork />
         <Order />
         <AboutUs />
         <Footer />

@@ -40,40 +40,15 @@ const discography = [
 
 const Gallery = () => {
   return (
-    <div className="  relative flex items-center justify-center gap-2  overflow-hidden shadow-lg  ">
+    <div className=" h-[300px] w-[90vw] sm:h-[400px] sm:w-[620px] lg:h-[500px]  rounded-xl overflow-hidden  ">
+    <div className="  relative flex  items-center justify-between w-[33wv] gap-2 ">
       {/* animation below */}
 
-      <div className=" animate-gallery-move  w-1/3 flex flex-col basis-1/3 pt-24 ">
-        {discography.map((single, i) => (
+      <div className=" flex flex-col  ">
+      {discography.map((single, i) => (
           <a
             target="_blank"
-            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  lg:h-[200px] lg:w-[200px] rounded-xl flex relative flex-end mb-2 "
-            href={single.trackUrl}
-            key={i}
-          >
-            <div
-              className="bg-image w-full h-full absolute bg-cover bg-no-repeat rounded-xl "
-              style={{
-                backgroundImage: `${single.imgUrl}`,
-              }}
-            ></div>
-            <div className=" flex items-stretch w-full h-[54px] flex-col absolute bottom-0 p-2 backdrop-blur bg-artblack bg-opacity-50 text-artman-blue-50 abs rounded-b-xl overflow-hidden ">
-              <p className="name  whitespace-nowrap overflow-hidden text-ellipsis  text-xs leading-5 font-normal tracking-normal  ">
-                {single.name}
-              </p>
-              <p className="artist  whitespace-nowrap overflow-hidden text-ellipsis  text-xs leading-5 font-normal tracking-normal  ">
-                {single.artist}
-              </p>
-            </div>
-          </a>
-        ))}
-      </div>
-
-      <div className=" w-1/3 flex flex-col basis-1/3 animate-gallery-move2 ">
-        {discography.map((single, i) => (
-          <a
-            target="_blank"
-            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  lg:h-[200px] lg:w-[200px] rounded-xl flex relative flex-end mb-2 "
+            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
             href="https://open.spotify.com/track/3fmXrzV5KtCIuvQM7WhnbO?si=73452079c592410d"
             key={i}
           >
@@ -83,7 +58,7 @@ const Gallery = () => {
                 backgroundImage: `url(https://i.scdn.co/image/ab67616d0000b273de23d050cae38ec9ef979bc3)`,
               }}
             ></div>
-            <div className=" flex items-stretch w-full h-[54px] flex-col absolute bottom-0 p-2 backdrop-blur bg-artblack bg-opacity-50 text-artman-blue-50 abs rounded-b-xl overflow-hidden ">
+            <div className=" flex items-stretch w-full h-[54px] flex-col absolute bottom-0 p-2  bg-artblack bg-opacity-50 text-artman-blue-50 abs rounded-b-xl overflow-hidden ">
               <p className="name  whitespace-nowrap overflow-hidden text-ellipsis  text-xs leading-5 font-normal tracking-normal  ">
                 DOPE
               </p>
@@ -95,11 +70,11 @@ const Gallery = () => {
         ))}
       </div>
 
-      <div className=" w-1/3 flex flex-col basis-1/3 pb-24 animate-gallery-move ">
-        {discography.map((single, i) => (
+      <div className=" flex flex-col  ">
+      {discography.map((single, i) => (
           <a
             target="_blank"
-            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  lg:h-[200px] lg:w-[200px] rounded-xl flex relative flex-end mb-2 "
+            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
             href="https://open.spotify.com/track/3fmXrzV5KtCIuvQM7WhnbO?si=73452079c592410d"
             key={i}
           >
@@ -109,7 +84,33 @@ const Gallery = () => {
                 backgroundImage: `url(https://i.scdn.co/image/ab67616d0000b273de23d050cae38ec9ef979bc3)`,
               }}
             ></div>
-            <div className=" flex items-stretch w-full h-[54px] flex-col absolute bottom-0 p-2 backdrop-blur bg-artblack bg-opacity-50 text-artman-blue-50 abs rounded-b-xl overflow-hidden ">
+            <div className=" flex items-stretch w-full h-[54px] flex-col absolute bottom-0 p-2  bg-artblack bg-opacity-50 text-artman-blue-50 abs rounded-b-xl overflow-hidden ">
+              <p className="name  whitespace-nowrap overflow-hidden text-ellipsis  text-xs leading-5 font-normal tracking-normal  ">
+                DOPE
+              </p>
+              <p className="artist  whitespace-nowrap overflow-hidden text-ellipsis  text-xs leading-5 font-normal tracking-normal  ">
+                NLE Choppa
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div className=" flex flex-col  ">
+      {discography.map((single, i) => (
+          <a
+            target="_blank"
+            className="   shadow-md   overflow-hidden h-[100px] w-[100px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-2xl flex relative flex-end mb-2 "
+            href="https://open.spotify.com/track/3fmXrzV5KtCIuvQM7WhnbO?si=73452079c592410d"
+            key={i}
+          >
+            <div
+              className="bg-image w-full h-full absolute bg-cover bg-no-repeat rounded-xl "
+              style={{
+                backgroundImage: `url(https://i.scdn.co/image/ab67616d0000b273de23d050cae38ec9ef979bc3)`,
+              }}
+            ></div>
+            <div className=" flex items-stretch w-full h-[54px] flex-col absolute bottom-0 p-2  bg-artblack bg-opacity-50 text-artman-blue-50 abs rounded-b-xl overflow-hidden ">
               <p className="name  whitespace-nowrap overflow-hidden text-ellipsis  text-xs leading-5 font-normal tracking-normal  ">
                 DOPE
               </p>
@@ -122,7 +123,7 @@ const Gallery = () => {
       </div>
 
 
-
+      </div>
     </div>
   );
 };

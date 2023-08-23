@@ -6,7 +6,6 @@ import Image from "next/image";
 import Banner from "../../public/images/artman-studio-banner.jpg"
 
 const Hero = ( props ) => {
-  console.log(props)
   return (
     <section>
       <div className="  relative w-full h-screen  ">
