@@ -5,7 +5,6 @@ import MobileMenu from "./MobileMenu";
 import ContactModal from "./ContactModal";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { navVariants } from "@/utils/motion";
 import Logo from "../../public/images/logo.png";
 import Image from "next/image";
@@ -14,7 +13,6 @@ import LanguageSelect from "./LanguageSelect";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   let [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
   const { scrollYProgress } = useScroll();
   let opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
 
@@ -35,16 +33,7 @@ const Navbar = () => {
             toggle ? "-translate-y-0" : "-translate-y-full"
           }  transition-transform duration-500 fixed top-0 left-0 w-full h-full bg-artman-blue-950 z-0 sm:hidden `}
         />
-        {/* <motion.div style={{ opacity }}>
-          <Link href="/">
-            <Image
-              src={Logo}
-              alt="Artman Studio logo"
-              className=" w-24 sm:w-32   cursor-pointer ml-4 lg:ml-8 z-10 "
-            />
-          </Link>
-        </motion.div> */}
-        <motion.div>
+        <motion.div style={{ opacity }} >
           <Link href="/">
             <Image
               src={Logo}

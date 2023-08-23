@@ -2,18 +2,33 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import Link from "next/link";
+import Logo from "../../public/images/logo.png";
+import Image from "next/image";
 
 export const metadata = {
   title: "Privacy Policy and Terms of Use | Artman Studio",
 };
 
 const Terms = () => {
+
   return (
     <>
       <Head>
         <title>Privacy Policy and Terms of Use | Artman Studio</title>
       </Head>
-      <section className=" pt-48 max-w-4xl px-4 mx-auto font-light ">
+      <header>
+      
+          <Link href="/">
+            <Image
+              src={Logo}
+              alt="Artman Studio logo"
+              className=" w-24 sm:w-32   cursor-pointer ml-4 lg:ml-8 z-10 animate-logo "
+            />
+          </Link>
+       
+      </header><main>
+      <section className=" pt-24 sm:pt-48 max-w-4xl px-4 mx-auto font-light ">
         <h1 className=" font-extrabold">Privacy Policy and Terms of Use</h1>
         <h2 className=" font-bold mt-8">Privacy Policy</h2>
         <p className="mt-4 ">
@@ -118,8 +133,9 @@ const Terms = () => {
           Contact Us: If you have any questions or concerns about these Terms of
           Use, please contact us at paulartman.music@gmail.com.
         </p>
-        <p className="mt-4 mb- ">Effective Date: August 2023</p>
+        <p className="mt-4">Effective Date: August 2023</p>
       </section>
+      </main>
 
       <Footer />
     </>

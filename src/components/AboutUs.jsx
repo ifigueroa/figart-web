@@ -64,7 +64,7 @@ const AboutUs = () => {
           >
            <Image
               src={AboutPhoto2}
-              className="w-full h-full object-cover  rounded-lg"
+              className="w-full h-full object-cover lg:mt-10  rounded-lg"
               alt="Mixing console"
             />
           </motion.div>
