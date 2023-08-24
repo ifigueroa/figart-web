@@ -1,13 +1,12 @@
-
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ModalCloseBtn from "./ModalCloseBtn";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, textVariant } from "@/utils/motion";
+import { textVariant } from "@/utils/motion";
 
-export default function ContactModal({ isOpen, closeModal }) {
+export default function ContactModal(props) {
   const form = useRef();
 
   const handleSubmit = (e) => {
@@ -32,8 +31,8 @@ export default function ContactModal({ isOpen, closeModal }) {
   };
 
   return (
-    <Transition appear show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-50" onClose={closeModal}>
+    <Transition appear show={props.isOpen} as={Fragment}>
+      <Dialog as="div" className="relative z-50" onClose={props.closeModal}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -58,7 +57,7 @@ export default function ContactModal({ isOpen, closeModal }) {
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-gradient-to-r from-artman-blue-50 to-artman-blue-100 p-6 text-left align-middle shadow-xl transition-all">
-                <ModalCloseBtn closeModal={closeModal} />
+                <ModalCloseBtn closeModal={props.closeModal} />
                 <form
                   ref={form}
                   onSubmit={handleSubmit}
@@ -70,7 +69,7 @@ export default function ContactModal({ isOpen, closeModal }) {
                         htmlFor="first-name"
                         className="block text-sm font-semibold leading-6 text-artblack "
                       >
-                        First name
+                        {props.firstname}
                       </label>
                       <div className="mt-2.5">
                         <input
@@ -88,7 +87,7 @@ export default function ContactModal({ isOpen, closeModal }) {
                         htmlFor="last-name"
                         className="block text-sm font-semibold leading-6 text-artblack"
                       >
-                        Last name
+                        {props.lastname}
                       </label>
                       <div className="mt-2.5">
                         <input
@@ -140,10 +139,10 @@ export default function ContactModal({ isOpen, closeModal }) {
                     </div>
                   </div>
                   <p className="text-gray-400 text-xs mt-4">
-                    By contacting us you automatically accept our{" "}
+                    {props.termsSp1}{" "}
                     <Link href="/terms" target="_blank">
                       <span className=" text-artman-blue-400 ">
-                        terms and privacy policy
+                        {props.termsSp2}
                       </span>
                     </Link>
                   </p>
@@ -158,7 +157,7 @@ export default function ContactModal({ isOpen, closeModal }) {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.8 }}
                     >
-                      Send
+                      {props.send}
                     </motion.button>
                   </div>
                 </form>

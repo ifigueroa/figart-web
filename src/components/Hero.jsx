@@ -34,7 +34,7 @@ const Hero = ( props ) => {
             </motion.h1>
           </div>
 
-          <motion.p className=" mb-12 sm:max-w-xl text-xs md:text-lg lg:text-xl text-center text-artman-blue-50   rounded-2xl ">
+          <motion.p className=" mb-12 sm:max-w-2xl text-xs md:text-lg lg:text-xl text-center text-artman-blue-50   rounded-2xl ">
               <motion.span variants={textVariant(0.2)}>
                 {props.subTitle1}
               </motion.span>

@@ -7,7 +7,6 @@ import TypingTitle from "./UI/TypingText";
 
 export default function Order(props) {
   const form = useRef();
-
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -37,7 +36,7 @@ export default function Order(props) {
       whileInView="show"
       viewport={{ once: false, amount: 0.5 }}
     >
-      <div className="mx-auto max-w-2xl sm:text-center">
+      <div className="mx-auto max-w-xl sm:text-center">
         <TypingTitle
           title={props.title}
           textStyles="text-3xl font-bold tracking-tight  text-artblack sm:text-4xl"
@@ -143,7 +142,7 @@ export default function Order(props) {
                 id="audioFiles"
                 autoComplete="organization"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-artblack  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-artman-blue-600 text-sm sm:leading-6"
-                placeholder=" Dropbox or Wetransfer link "
+                placeholder={props.audioLinkPlaceHolder}
               />
             </div>
           </motion.div>
@@ -168,7 +167,7 @@ export default function Order(props) {
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-artblack  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-artman-blue-600  text-sm sm:leading-6"
                 defaultValue={""}
-                placeholder="What can we do for you? Send us some reference tracks for best results"
+                placeholder={props.messagePlaceholder}
                 required
               />
             </div>

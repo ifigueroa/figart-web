@@ -3,7 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import LanguageSelect from "./LanguageSelect";
 import { ulVariants, listVariants } from "@/utils/motion";
 
-const MobileMenu = ({ toggle, setToggle, openModal, props }) => {
+const MobileMenu = ({
+  toggle,
+  setToggle,
+  openModal,
+  mobileItem2,
+  mobileItem3,
+}) => {
   const closeMenu = () => {
     setToggle(!toggle);
   };
@@ -34,7 +40,7 @@ const MobileMenu = ({ toggle, setToggle, openModal, props }) => {
               key="ourwork"
             >
               <a href="#our-work" className=" ml-4 w-full" onClick={closeMenu}>
-                {props.mobileItem2}
+                {mobileItem2}
               </a>
             </motion.li>
             <motion.li
@@ -42,12 +48,8 @@ const MobileMenu = ({ toggle, setToggle, openModal, props }) => {
               variants={listVariants}
               key="aboutus"
             >
-              <a
-                href="#about"
-                className=" ml-4 w-full "
-                onClick={closeMenu}
-              >
-                {props.mobileItem3}
+              <a href="#about" className=" ml-4 w-full " onClick={closeMenu}>
+                {mobileItem3}
               </a>
             </motion.li>
             <motion.li

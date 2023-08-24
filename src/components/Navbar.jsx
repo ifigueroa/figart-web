@@ -15,7 +15,6 @@ const Navbar = (props) => {
   let [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   let opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
-
   function closeModal() {
     setIsOpen(false);
   }
@@ -33,7 +32,7 @@ const Navbar = (props) => {
             toggle ? "-translate-y-0" : "-translate-y-full"
           }  transition-transform duration-500 fixed top-0 left-0 w-full h-full bg-artman-blue-950 z-0 sm:hidden `}
         />
-        <motion.div style={ !isOpen && { opacity }} >
+        <motion.div style={!isOpen && { opacity }}>
           <Link href="/">
             <Image
               src={Logo}
@@ -88,7 +87,7 @@ const Navbar = (props) => {
             </motion.li>
 
             <motion.li variants={navVariants(0.4)}>
-            <LanguageSelect />
+              <LanguageSelect />
             </motion.li>
           </motion.ul>
           <BurgerMenu toggle={toggle} setToggle={setToggle} />
@@ -97,8 +96,22 @@ const Navbar = (props) => {
       {/* Mobile Menu */}
 
       <CloseBtn toggle={toggle} setToggle={setToggle} />
-      <MobileMenu toggle={toggle} setToggle={setToggle} openModal={openModal} props={props} />
-      <ContactModal isOpen={isOpen} closeModal={closeModal} />
+      <MobileMenu
+        toggle={toggle}
+        setToggle={setToggle}
+        openModal={openModal}
+        mobileItem2={props.mobileItem2}
+        mobileItem3={props.mobileItem3}
+      />
+      <ContactModal
+        isOpen={isOpen}
+        closeModal={closeModal}
+        firstname={props.firstname}
+        lastname={props.lastname}
+        termsSp1={props.termsSp1}
+        termsSp2={props.termsSp2}
+        send={props.send}
+      />
     </nav>
   );
 };
