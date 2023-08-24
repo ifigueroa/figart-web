@@ -1,9 +1,9 @@
 
 import React, { useRef } from "react";
-import { motion } from "framer-motion";
 import { staggerContainer, textVariant } from "@/utils/motion";
 import Image from "next/image";
 import Banner from "../../public/images/artman-studio-banner.jpg"
+import { motion } from "framer-motion";
 
 const Hero = ( props ) => {
   return (
@@ -15,6 +15,8 @@ const Hero = ( props ) => {
             className=" absolute top-0 left-0 opacity-100 w-screen h-screen object-cover -z-50 object-top "
             alt="Artman Entertainement Studio"
             quality={100}
+            priority={true}
+            placeholder = "blur"
           />
         </div>
 
