@@ -36,7 +36,7 @@ export default function Order(props) {
       whileInView="show"
       viewport={{ once: false, amount: 0.5 }}
     >
-      <div className="mx-auto max-w-xl sm:text-center">
+      <div className="mx-auto max-w-[632px] sm:text-center">
         <TypingTitle
           title={props.title}
           textStyles="text-3xl font-bold tracking-tight  text-artblack sm:text-4xl"
