@@ -28,7 +28,7 @@ const Terms = () => {
           </Link>
        
       </header><main>
-      <section className=" pt-24 sm:pt-48 max-w-4xl px-4 mx-auto font-light ">
+      <section className=" pt-24 sm:pt-32 max-w-4xl px-4 mx-auto font-light ">
         <h1 className=" font-extrabold">Privacy Policy and Terms of Use</h1>
         <h2 className=" font-bold mt-8">Privacy Policy</h2>
         <p className="mt-4 ">

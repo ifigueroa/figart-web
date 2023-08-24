@@ -7,10 +7,10 @@ import Image from "next/image";
 import AboutPhoto1 from "../../public/images/about-us-photo-1.avif";
 import AboutPhoto2 from "../../public/images/about-us-photo-2.avif";
 
-const AboutUs = () => {
+const AboutUs = (props) => {
   return (
     <section id="about">
-      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-7xl sm:py-12 lg:grid lg:grid-cols-2 lg:pt-32 lg:pb-48 lg:px-6 ">
+      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-7xl lg:grid lg:grid-cols-2 lg:pt-24 lg:pb-48 lg:px-6 ">
         <motion.div
           className=" text-artman-blue-900 space-y-8 text-base "
           variants={staggerContainer}
@@ -19,29 +19,17 @@ const AboutUs = () => {
           viewport={{ once: false, amount: 0.25 }}
         >
           <TypingTitle
-            title="About us"
+            title={props.title}
             textStyles="mb-6 text-3xl font-bold tracking-tight text-artblack sm:text-4xl"
           />
           <motion.p className="mb-4" variants={fadeIn("up", "tween", 0.2, 1.5)}>
-            With years of expertise and high-profile collaborations, at Artman
-            Studio, we bring a wealth of experience to the forefront of every
-            project. With a proven track record of delivering exceptional audio
-            processing services, our journey in the industry has been defined by
-            a commitment to excellence.
+           {props.p1}
           </motion.p>
           <motion.p className="mb-4" variants={fadeIn("up", "tween", 0.6, 1.5)}>
-            We have over 20 years experience, we ensure that each project is
-            meticulously brought to perfection. We take pride in working with
-            high-profile musicians who trust us to elevate their music to the
-            highest standards. From emerging artists seeking a distinct sound to
-            established professionals striving for the perfect mix, we cater to
-            a diverse range of musical visions.
+          {props.p2}
           </motion.p>
           <motion.p variants={fadeIn("up", "tween", 0.8, 1.5)}>
-            Whether it's music mixing, mastering, or stem mastering, our
-            dedication to quality remains unwavering. Join us on a sonic journey
-            that's fueled by experience, expertise, and a shared passion for
-            music. Let's collaborate to create something extraordinary together.
+          {props.p3}
           </motion.p>
         </motion.div>
         <motion.div

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
 
-export default function Order() {
+export default function Order(props) {
   const form = useRef();
 
   const handleSubmit = (e) => {
@@ -39,15 +39,14 @@ export default function Order() {
     >
       <div className="mx-auto max-w-2xl sm:text-center">
         <TypingTitle
-          title="Send your music"
+          title={props.title}
           textStyles="text-3xl font-bold tracking-tight  text-artblack sm:text-4xl"
         />
         <motion.p
           className="mt-6 text-lg leading-8 text-artman-blue-900"
           variants={fadeIn("left", "tween", 0, 1)}
         >
-          Send us your audiofiles now. Let us know if you need mixing, mastering
-          or stem mastering. We will get back to you within 2 working days.
+          {props.subTitle}
         </motion.p>
       </div>
 
@@ -64,7 +63,7 @@ export default function Order() {
                 className="block text-sm font-semibold leading-6 text-artblack "
                 variants={fadeIn("up", "tween", 0, 1)}
               >
-                First name
+                {props.firstname}
               </motion.label>
             </div>
             <div className="mt-2.5">
@@ -85,7 +84,7 @@ export default function Order() {
                 className="block text-sm font-semibold leading-6 text-artblack"
                 variants={fadeIn("up", "tween", 0, 1)}
               >
-                Last name
+                {props.lastname}
               </motion.label>
             </div>
             <div className="mt-2.5">
@@ -133,7 +132,7 @@ export default function Order() {
                 className="block text-sm font-semibold leading-6 text-artblack"
                 variants={fadeIn("up", "tween", 0, 1)}
               >
-                Audio files link
+                {props.audioLink}
               </motion.label>
             </div>
             <div className="mt-2.5">
@@ -180,10 +179,10 @@ export default function Order() {
             className="text-gray-400 text-xs mt-4"
             variants={fadeIn("up", "tween", 0, 1)}
           >
-            By contacting us you automatically accept our{" "}
+            {props.termsSp1}{" "}
             <Link href="/terms" target="_blank">
               <span className=" text-artman-blue-400 ">
-                terms and privacy policy
+                {props.termsSp2}
               </span>
             </Link>
           </motion.p>
@@ -196,7 +195,7 @@ export default function Order() {
             whileHover={{scale:1.05}}
             whileTap={{ scale: 0.8 }}
           >
-            Send
+            {props.send}
           </motion.button>
         </div>
       </form>

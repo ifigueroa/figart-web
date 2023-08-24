@@ -3,13 +3,11 @@ import { motion } from "framer-motion";
 import {
   fadeIn,
   staggerContainer,
-  textVariant,
-  textVariant2,
 } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
 import Gallery from "./Gallery";
 
-const OurWork = () => {
+const OurWork = (props) => {
   return (
     <motion.section
       id="our-work"
@@ -27,26 +25,25 @@ const OurWork = () => {
       </motion.div>
       <div className=" flex-1 lg:pl-8 lg:pt-4 lg:max-w-lg pb-6 mx-auto max-w-2xl ">
         <TypingTitle
-          title="Our Work"
+          title={props.title}
           textStyles="mt-2 text-3xl font-bold tracking-tight text-artblack sm:text-4xl"
         />
         <motion.p className=" mt-6 max-w-xl space-y-8 text-base leading-7 text-artman-blue-900">
           <motion.span variants={fadeIn("up", "tween", 0.2, 1.5)}>
-            Music mixed and mastered by us has reached well{" "}
+            {props.textSpan1}{" "}
           </motion.span>
           <br />
           <motion.span
             className=" font-extrabold text-3xl sm:text-4xl text-artman-blue-500 overflow-hidden"
             variants={fadeIn("up", "tween", 0.4, 1.5)}
           >
-            over 200 millions combined Spotify plays
+            {props.textSpan2}
           </motion.span>
           . <br />{" "}
           <motion.span
           variants={fadeIn("up", "tween", 0.5, 1.5)}
           >
-            We have extensive knowledge and experience in the music industry and
-            its expectations.
+            {props.textSpan3}
           </motion.span>
         </motion.p>
       </div>

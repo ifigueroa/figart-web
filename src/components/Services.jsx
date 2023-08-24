@@ -12,30 +12,29 @@ const Services = (props) => {
   const services = [
     {
       id: 1,
-      name: "Mixing (from 400€/project)",
-      description:
-        "Your individual tracks come together to create a harmonious masterpiece. Each element is meticulously blended to achieve a balanced and immersive sonic experience. We ensure that every instrument finds its perfect place in the mix.",
+      name: props.service1Name,
+      description: props.service1Desc,
       icon: MixingIcon,
     },
     {
       id: 2,
-      name: "Mastering (60€/track)",
+      name: props.service2Name,
       description:
-        "Whether you're preparing tracks for distribution, radio play, or streaming platforms, our precise adjustments ensure a polished and professional sound across various playback systems.",
+      props.service2Desc,
       icon: MasteringIcon,
     },
     {
       id: 3,
-      name: "Stem mastering (20€/stem)",
+      name: props.service3Name,
       description:
-        "Stem mastering empowers you to shape your music's elements individually, offering a level of customization that standard mastering can't achieve.",
+      props.service3Desc,
       icon: StemsIcon,
     },
   ];
 
   return (
     <section id="services">
-      <div className="overflow-hidden pt-12 lg:py-32">
+      <div className="overflow-hidden pt-12 sm:pt-32 lg:pb-32 lg:pt-56 ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
@@ -92,7 +91,7 @@ const Services = (props) => {
             >
               <Image
                 src={ServicesPhoto}
-                alt="Artman Enternainment Studio"
+                alt="Artman Entertainment Studio"
                 className="w-[48rem] hidden sm:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-right "
               />
             </motion.div>
