@@ -6,7 +6,7 @@ const Footer = (props) => {
   return (
     <footer className="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 py-6 text-center text-xs font-light ">
       <p>
-        &copy; Artman Studio {currentYear} {`${props.createdBy}`}{" "}
+        &copy; Artman Entertainement {currentYear} {`${props.createdBy}`}{" "}
         <a
           className=" font-medium "
           href="https://webdevelap.com/"
