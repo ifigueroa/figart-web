@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
 import Image from "next/image";
-import AboutPhoto1 from "../../public/images/about-us-photo-1.avif";
-import AboutPhoto2 from "../../public/images/about-us-photo-2.avif";
+import AboutPhoto1 from "../../public/images/about-us-photo-1.jpeg";
+import AboutPhoto2 from "../../public/images/about-us-photo-2.jpeg";
 
 const AboutUs = (props) => {
   return (
@@ -52,8 +52,8 @@ const AboutUs = (props) => {
           >
            <Image
               src={AboutPhoto2}
-              className="w-full h-full object-cover lg:mt-10  rounded-lg"
-              alt="Mixing console"
+              className="w-full h-full max-h-[400px] object-cover lg:mt-10  rounded-lg"
+              alt="Manley equalizer"
             />
           </motion.div>
         </motion.div>
