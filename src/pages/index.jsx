@@ -29,7 +29,7 @@ export default function Home() {
         />
       </Head>
       <header className="w-full z-20 h-24 flex absolute top-0 left-0 ">
-        <Navbar { ...translation.nav } />
+        <Navbar {...translation.nav} {...translation.contactModal} />
       </header>
       <main>
         <Hero { ...translation.hero } />
