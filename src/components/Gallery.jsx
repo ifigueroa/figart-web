@@ -13,7 +13,7 @@ const Gallery = () => {
       {spotifyDataL.map((single, i) => (
           <a
             target="_blank"
-            className=" shadow-md   overflow-hidden h-[100px] w-[100px] min-[376px]:w-[120px] min-[376px]:h-[120px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
+            className=" shadow-md   overflow-hidden h-[100px] w-[100px]   min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
             href={single.trackUrl}
             key={single.id}
           >
@@ -35,7 +35,7 @@ const Gallery = () => {
       {spotifyDataM.map((single, i) => (
           <a
           target="_blank"
-          className=" shadow-md   overflow-hidden h-[100px] w-[100px] min-[376px]:w-[120px] min-[376px]:h-[120px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
+          className=" shadow-md   overflow-hidden h-[100px] w-[100px]  min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
           href={single.trackUrl}
           key={single.id}
         >
@@ -57,7 +57,7 @@ const Gallery = () => {
       {spotifyDataR.map((single, i) => (
           <a
           target="_blank"
-          className=" shadow-md   overflow-hidden h-[100px] w-[100px] min-[376px]:w-[120px] min-[376px]:h-[120px]  min-[426px]:h-[200px] min-[426px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
+          className=" shadow-md   overflow-hidden h-[100px] w-[100px]   min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
           href={single.trackUrl}
           key={single.id}
         >
