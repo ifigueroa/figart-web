@@ -5,15 +5,15 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <div className=" h-[300px] w-[90vw] sm:h-[400px] sm:w-[620px] lg:h-[500px]  rounded-xl overflow-hidden  ring-1 ring-artman-blue-600/20 shadow-xl ">
-    <div className="  relative flex  items-center justify-between w-[33wv] gap-2 ">
+    <div className=" h-[300px] w-[90vw] min-[] sm:h-[400px] sm:w-[620px] lg:h-[500px]  rounded-xl overflow-y-hidden overflow-x-auto no-scrollbar  ring-1 ring-artman-blue-600/20 shadow-xl ">
+    <div className="  relative flex  items-center justify-between w-full gap-2 ">
       {/* animation below */}
 
-      <div className=" flex flex-col animate-sm-gallery-move min-[426px]:animate-gallery-move  ">
+      <div className=" flex flex-col animate-sm-gallery-move min-[432px]:animate-gallery-move  ">
       {spotifyDataL.map((single, i) => (
           <a
             target="_blank"
-            className=" shadow-md   overflow-hidden h-[100px] w-[100px]   min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
+            className=" shadow-md   overflow-hidden h-[120px] w-[120px]   min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
             href={single.trackUrl}
             key={single.id}
           >
@@ -31,11 +31,11 @@ const Gallery = () => {
         ))}
       </div>
 
-      <div className=" flex flex-col animate-sm-gallery-move2 min-[426px]:animate-gallery-move2  ">
+      <div className=" flex flex-col animate-sm-gallery-move2 min-[432px]:animate-gallery-move2  ">
       {spotifyDataM.map((single, i) => (
           <a
           target="_blank"
-          className=" shadow-md   overflow-hidden h-[100px] w-[100px]  min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
+          className=" shadow-md   overflow-hidden h-[120px] w-[120px]  min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
           href={single.trackUrl}
           key={single.id}
         >
@@ -53,11 +53,11 @@ const Gallery = () => {
         ))}
       </div>
 
-      <div className=" flex flex-col animate-sm-gallery-move min-[426px]:animate-gallery-move pt-20 min-[426px]:pt-40 ">
+      <div className=" flex flex-col animate-sm-gallery-move min-[432px]:animate-gallery-move pt-20 min-[426px]:pt-40 ">
       {spotifyDataR.map((single, i) => (
           <a
           target="_blank"
-          className=" shadow-md   overflow-hidden h-[100px] w-[100px]   min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
+          className=" shadow-md overflow-hidden h-[120px] w-[120px] min-[432px]:h-[200px] min-[432px]:w-[200px] rounded-xl flex relative flex-end mb-2 "
           href={single.trackUrl}
           key={single.id}
         >
