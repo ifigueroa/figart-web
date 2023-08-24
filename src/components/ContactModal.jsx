@@ -26,7 +26,7 @@ export default function ContactModal(props) {
           console.log(error.text);
         }
       );
-    closeModal();
+    props.closeModal();
     e.target.reset();
   };
 
