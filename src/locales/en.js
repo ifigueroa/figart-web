@@ -24,7 +24,7 @@ export default {
     service2Name: "Mastering (60€ + taxes/track)",
     service2Desc:
       "Whether you're preparing tracks for distribution, radio play, or streaming platforms, our precise adjustments ensure a polished and professional sound across various playback systems.",
-    service3Name: "Mastering (60€ + taxes/track)",
+    service3Name: "Stem Mastering (20€ + taxes/stem)",
     service3Desc:
       "Stem mastering empowers you to shape your music's elements individually, offering a level of customization that standard mastering can't achieve.",
     title: "What we do",
