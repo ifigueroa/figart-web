@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Artman Entertainement</title>
+        <title>Artman Entertainment</title>
         <meta
           name="description"
           content={`${translation.metaData.content}`}

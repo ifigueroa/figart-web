@@ -36,7 +36,7 @@ const Navbar = (props) => {
           <Link href="/">
             <Image
               src={Logo}
-              alt="Artman Entertainement logo"
+              alt="Artman Entertainment logo"
               className=" w-24 sm:w-32   cursor-pointer ml-4 lg:ml-8 z-10 animate-logo "
             />
           </Link>

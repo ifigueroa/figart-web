@@ -13,7 +13,7 @@ const Hero = ( props ) => {
           <Image
             src={Banner}
             className=" absolute top-0 left-0 opacity-100 w-screen h-screen object-cover -z-50 object-top "
-            alt="Artman Entertainement Studio"
+            alt="Artman Entertainment Studio"
             quality={100}
             priority={true}
             placeholder = "blur"
