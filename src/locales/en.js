@@ -18,13 +18,13 @@ export default {
   },
 
   services: {
-    service1Name: "Mixing (from 400€/project)",
+    service1Name: "Mixing (from 400€ + taxes/project)",
     service1Desc:
       "Your individual tracks come together to create a harmonious masterpiece. Each element is meticulously blended to achieve a balanced and immersive sonic experience. We ensure that every instrument finds its perfect place in the mix.",
-    service2Name: "Mastering (60€/track)",
+    service2Name: "Mastering (60€ + taxes/track)",
     service2Desc:
       "Whether you're preparing tracks for distribution, radio play, or streaming platforms, our precise adjustments ensure a polished and professional sound across various playback systems.",
-    service3Name: "Mastering (60€/track)",
+    service3Name: "Mastering (60€ + taxes/track)",
     service3Desc:
       "Stem mastering empowers you to shape your music's elements individually, offering a level of customization that standard mastering can't achieve.",
     title: "What we do",

@@ -20,13 +20,13 @@ export default {
   },
 
   services: {
-    service1Name: "Mixage (à partir de 400 €/projet)",
+    service1Name: "Mixage (à partir de 400 € + TVA/projet)",
     service1Desc:
       "Vos pistes individuelles s'assemblent pour créer un chef-d'œuvre harmonieux. Chaque élément est méticuleusement mélangé pour obtenir une expérience sonore équilibrée et immersive. Nous nous assurons que chaque instrument trouve sa place parfaite dans le mix.",
-    service2Name: "Mastering (60 €/piste)",
+    service2Name: "Mastering (60 € + TVA/piste)",
     service2Desc:
       "Que vous prépariez des pistes pour la distribution, la diffusion radio ou les plateformes de streaming, nos ajustements précis garantissent un son poli, professionnel et  compatible sur différents systèmes audios.",
-    service3Name: "Stem Mastering (60 €/piste)",
+    service3Name: "Stem Mastering (60 € + TVA/piste)",
     service3Desc:
       "Le stem mastering vous permet de façonner individuellement les éléments de votre musique, offrant un niveau de personnalisation que le mastering standard ne peut pas atteindre.",
     title: "Ce que nous faisons",
