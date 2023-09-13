@@ -40,10 +40,10 @@ const Hero = ( props ) => {
               <motion.span variants={textVariant(0.2)}>
                 {props.subTitle1}
               </motion.span>
-            <br />
+            {/* <br />
               <motion.span variants={textVariant(0.3)}>
               {props.subTitle2}
-              </motion.span>
+              </motion.span> */}
           </motion.p>
           <a href="#order">
             <motion.button

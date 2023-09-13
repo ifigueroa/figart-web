@@ -2,7 +2,7 @@
 export default {
   metaData: {
     content:
-      "Services de mixage, de mastering et de stem mastering en ligne. Élevez votre musique grâce à un traitement audio expert et à un polissage professionnel. Envoyez votre musique dès maintenant pour obtenir une qualité sonore exceptionnelle.",
+      "Services de mixage, de mastering et de stem mastering en ligne. Propulsez votre votre musique vers de nouveaux sommets grâce à un traitement audio expert et à un polissage professionnel. Envoyez votre musique dès maintenant pour obtenir une qualité sonore exceptionnelle.",
   },
   nav: {
     item2: "Notre travail",
@@ -11,24 +11,22 @@ export default {
     mobileItem3: "À propos",
   },
   hero: {
-    title: "Mixage et Mastering en Ligne",
+    title: "Mix et Mastering en Ligne",
     subTitle1:
-      "Faites mixer et masteriser votre musique par Artman Entertainment.",
-    subTitle2:
-      "Envoyez votre musique dès aujourd'hui et propulsez-la vers de nouveaux sommets.",
+      "Faites mixer et masteriser votre musique pour la propulsez vers de nouveaux sommets.",
     ctaBtn: "Envoyer votre musique",
   },
 
   services: {
     service1Name: "Mixage (à partir de 400 € + TVA/projet)",
     service1Desc:
-      "Vos pistes individuelles s'assemblent pour créer un chef-d'œuvre harmonieux. Chaque élément est méticuleusement mélangé pour obtenir une expérience sonore équilibrée et immersive. Nous nous assurons que chaque instrument trouve sa place parfaite dans le mix.",
+      "Vos pistes individuelles s'assemblent pour créer un ensemble harmonieux. Chaque élément est méticuleusement mélangé pour obtenir une expérience sonore équilibrée et immersive. Nous nous assurons que chaque instrument trouve sa place parfaite dans le mix.",
     service2Name: "Mastering (60 € + TVA/piste)",
     service2Desc:
-      "Que vous prépariez des pistes pour la distribution, la diffusion radio ou les plateformes de streaming, nos ajustements précis garantissent un son poli, professionnel et  compatible sur différents systèmes audios.",
-    service3Name: "Stem Mastering (60 € + TVA/piste)",
+      "Sublimez votre mixage et obtenez une fichier master  pour la distribution, la diffusion radio ou les plateformes de streaming. Nos ajustements précis garantissent un son poli, professionnel et compatible sur différents systèmes audios.",
+    service3Name: "Stem Mastering (20 € + TVA/piste)",
     service3Desc:
-      "Le stem mastering vous permet de façonner individuellement les éléments de votre musique, offrant un niveau de personnalisation que le mastering standard ne peut pas atteindre.",
+      "Le mastering par stems vous permet de façonner les différents éléments qui composent  votre musique. Cette solution offre un niveau de contrôle et de précision que le mastering standard ne peut pas atteindre.",
     title: "Ce que nous faisons",
     aboveTitle: "Soyez au sommet",
     subTitle: "Libérez le plein potentiel de votre musique",
@@ -56,9 +54,9 @@ export default {
   },
   aboutUs: {
     title: "À Propos de Nous",
-    p1: "Avec des années d'expertise et des collaborations de haut niveau, chez Artman Entertainment, nous apportons une richesse d'expérience à chaque projet. Avec un fort historique de prestation de services en traitement audio d'exception, notre parcours dans l'industrie est défini par un engagement envers l'excellence.",
-    p2: "Avec plus de 20 ans d'expérience, nous veillons à ce que chaque projet soit méticuleusement porté à la perfection. Nous sommes fiers de travailler avec des musiciens de haut niveau qui nous font confiance pour élever leur musique aux normes les plus élevées. Que ce soit pour les artistes émergents à la recherche d'un son distinct ou pour les professionnels établis en quête du mix parfait, nous répondons à un large éventail d'ambitions musicales.",
-    p3: "Que ce soit pour le mixage, le mastering ou le stem mastering, notre dévouement envers la qualité demeure inébranlable. Joignez-vous à nous pour un voyage sonore alimenté par l'expérience, l'expertise et une passion partagée pour la musique. Collaborons pour créer quelque chose d'extraordinaire ensemble.",
+    p1: "Avec plus de 15 ans d'expérience, nous veillons à ce que chaque projet soit méticuleusement porté à son maximum. Nous sommes heureux de travailler avec des musiciens qui nous font confiance pour emmener leur musique aux normes les plus élevées. Que ce soit pour les artistes émergents à la recherche d'un son distinct ou pour les professionnels établis, nous répondons à un large éventail d'ambitions musicales.",
+    p2: "Pour le mixage, le mastering, notre dévouement envers la qualité demeure inébranlable. Joignez-vous à nous pour un voyage sonore alimenté par l'expérience, l'expertise et une passion partagée pour la musique. Collaborons pour créer quelque chose d'extraordinaire ensemble.",
+    p3: "",
   },
   footer: {
     createdBy: "créé par",

@@ -28,9 +28,9 @@ const AboutUs = (props) => {
           <motion.p className="mb-4" variants={fadeIn("up", "tween", 0.6, 1.5)}>
           {props.p2}
           </motion.p>
-          <motion.p variants={fadeIn("up", "tween", 0.8, 1.5)}>
+          {/* <motion.p variants={fadeIn("up", "tween", 0.8, 1.5)}>
           {props.p3}
-          </motion.p>
+          </motion.p> */}
         </motion.div>
         <motion.div
           className="grid  grid-cols-2 gap-4 mt-8"

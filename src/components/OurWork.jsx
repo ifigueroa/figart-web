@@ -27,10 +27,10 @@ const OurWork = (props) => {
             textStyles="mt-2 text-3xl font-bold tracking-tight text-artblack sm:text-4xl"
           />
           <motion.p className=" mt-6 max-w-xl space-y-8 text-base leading-7 text-artman-blue-900">
-            <motion.span variants={fadeIn("up", "tween", 0.2, 1.5)}>
+            {/* <motion.span variants={fadeIn("up", "tween", 0.2, 1.5)}>
               {props.textSpan1}{" "}
             </motion.span>
-            <br />
+            <br /> */}
             <motion.span
               className=" font-extrabold text-3xl sm:text-4xl text-artman-blue-500 overflow-hidden"
               variants={fadeIn("up", "tween", 0.4, 1.5)}
@@ -38,9 +38,9 @@ const OurWork = (props) => {
               {props.textSpan2}
             </motion.span>
             . <br />{" "}
-            <motion.span variants={fadeIn("up", "tween", 0.5, 1.5)}>
+            {/* <motion.span variants={fadeIn("up", "tween", 0.5, 1.5)}>
               {props.textSpan3}
-            </motion.span>
+            </motion.span> */}
           </motion.p>
           <div className=" w-80"></div>
         </div>

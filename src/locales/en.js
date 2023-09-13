@@ -12,18 +12,17 @@ export default {
   },
   hero: {
     title: "Online Mixing and Mastering",
-    subTitle1: "Get your music mixed and mastered by Artman Entertainment.",
-    subTitle2: "Send your music today and take it to the next level.",
+    subTitle1: "Have your music mixed and mastered to propel it to new heights.",
     ctaBtn: "Send your music",
   },
 
   services: {
     service1Name: "Mixing (from 400€ + taxes/project)",
     service1Desc:
-      "Your individual tracks come together to create a harmonious masterpiece. Each element is meticulously blended to achieve a balanced and immersive sonic experience. We ensure that every instrument finds its perfect place in the mix.",
+      "Your individual tracks come together to create a harmonious whole. Each element is meticulously mixed to achieve a balanced and immersive sound experience. We ensure that every instrument finds its perfect place in the mix.",
     service2Name: "Mastering (60€ + taxes/track)",
     service2Desc:
-      "Whether you're preparing tracks for distribution, radio play, or streaming platforms, our precise adjustments ensure a polished and professional sound across various playback systems.",
+      "Enhance your mix and obtain a master file for distribution, radio broadcasting, or streaming platforms. Our precise adjustments guarantee a polished, professional sound that's compatible across various audio systems.",
     service3Name: "Stem Mastering (20€ + taxes/stem)",
     service3Desc:
       "Stem mastering empowers you to shape your music's elements individually, offering a level of customization that standard mastering can't achieve.",
@@ -53,9 +52,9 @@ export default {
   },
   aboutUs: {
 title: "About us",
-p1: " With years of expertise and high-profile collaborations, at Artman Entertainment, we bring a wealth of experience to the forefront of every project. With a proven track record of delivering exceptional audio processing services, our journey in the industry has been defined by a commitment to excellence.",
-p2:" We have over 20 years experience, we ensure that each project is meticulously brought to perfection. We take pride in working with high-profile musicians who trust us to elevate their music to the highest standards. From emerging artists seeking a distinct sound to established professionals striving for the perfect mix, we cater to a diverse range of musical visions.",
-p3:"Whether it's music mixing, mastering, or stem mastering, our dedication to quality remains unwavering. Join us on a sonic journey that's fueled by experience, expertise, and a shared passion for music. Let's collaborate to create something extraordinary together."
+p1: "With over 15 years of experience, we ensure that every project is meticulously taken to its peak. We are pleased to work with musicians who trust us to elevate their music to the highest standards. Whether it's for emerging artists in search of a distinct sound or established professionals, we cater to a wide range of musical ambitions.",
+p2:"For mixing, mastering, our dedication to quality remains unwavering. Join us for a sonic journey powered by experience, expertise, and a shared passion for music. Let's collaborate to create something extraordinary together.",
+p3:""
   },
   footer: {
     createdBy: "created by"
