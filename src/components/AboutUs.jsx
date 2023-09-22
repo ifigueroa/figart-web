@@ -43,7 +43,7 @@ const AboutUs = (props) => {
           >
             <Image
               src={AboutPhoto1}
-              className="w-full max-h-[400px] object-cover  rounded-lg"
+              className="w-full max-h-[400px] object-cover  rounded-lg lg:h-96"
               alt="Mixing console"
             />
           </motion.div>

@@ -83,7 +83,7 @@ const Services = (props) => {
               </motion.div>
             </div>
             <motion.div
-              className=" "
+              className="  "
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.25 }}
@@ -92,7 +92,7 @@ const Services = (props) => {
               <Image
                 src={ServicesPhoto}
                 alt="Artman Entertainment Studio"
-                className="w-[48rem] hidden sm:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-right "
+                className="w-screen mb-6 sm:mb-0   sm:block max-w-none rounded-xl  shadow-md sm:shadow-xl ring-1 ring-gray-400/10 lg:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-left "
               />
             </motion.div>
           </div>
