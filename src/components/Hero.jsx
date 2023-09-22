@@ -1,27 +1,29 @@
-
 import React, { useRef } from "react";
 import { staggerContainer, textVariant } from "@/utils/motion";
 import Image from "next/image";
-import Banner from "../../public/images/artman-studio-banner.jpg"
-import { motion } from "framer-motion";
+import Banner from "../../public/images/artman-studio-banner.jpg";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-const Hero = ( props ) => {
+const Hero = (props) => {
+  let { scrollYProgress } = useScroll();
+  let y = useTransform(scrollYProgress, [0, 0.4], [0, 100]);
+
   return (
     <section>
-      <div className="  relative w-full h-screen  ">
-        <div>
+      <div className=" relative w-screen h-screen  ">
+        <motion.div style={{ y }}>
           <Image
             src={Banner}
-            className=" absolute top-0 left-0 opacity-100 w-screen h-screen object-cover -z-50  "
+            className=" absolute top-0 left-0 opacity-100 w-full h-screen object-cover   "
             alt="Artman Entertainment Studio"
             quality={80}
             priority={true}
-            placeholder = "blur"
+            placeholder="blur"
           />
-        </div>
+        </motion.div>
 
-        <motion.article
-          className="  text-artman-blue-50 p-4 flex h-screen  flex-col justify-center gap-4 items-center w-full  "
+        <motion.div
+          className=" isolate  text-artman-blue-50 p-4 flex h-screen  flex-col justify-center gap-4 items-center w-full  "
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
@@ -37,9 +39,9 @@ const Hero = ( props ) => {
           </div>
 
           <motion.p className=" mb-12 sm:max-w-2xl text-xs md:text-lg lg:text-xl text-center text-artman-blue-50   rounded-2xl ">
-              <motion.span variants={textVariant(0.2)}>
-                {props.subTitle1}
-              </motion.span>
+            <motion.span variants={textVariant(0.2)}>
+              {props.subTitle1}
+            </motion.span>
             {/* <br />
               <motion.span variants={textVariant(0.3)}>
               {props.subTitle2}
@@ -55,7 +57,7 @@ const Hero = ( props ) => {
               {props.ctaBtn}
             </motion.button>
           </a>
-        </motion.article>
+        </motion.div>
       </div>
     </section>
   );

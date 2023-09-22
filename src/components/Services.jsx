@@ -19,15 +19,13 @@ const Services = (props) => {
     {
       id: 2,
       name: props.service2Name,
-      description:
-      props.service2Desc,
+      description: props.service2Desc,
       icon: MasteringIcon,
     },
     {
       id: 3,
       name: props.service3Name,
-      description:
-      props.service3Desc,
+      description: props.service3Desc,
       icon: StemsIcon,
     },
   ];
@@ -83,7 +81,7 @@ const Services = (props) => {
               </motion.div>
             </div>
             <motion.div
-              className="  "
+              className=" rounded-xl lg:overflow-hidden  min-[1426px]:overflow-visible "
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.25 }}
@@ -92,7 +90,11 @@ const Services = (props) => {
               <Image
                 src={ServicesPhoto}
                 alt="Artman Entertainment Studio"
-                className="w-screen mb-6 sm:mb-0   sm:block max-w-none rounded-xl  shadow-md sm:shadow-xl ring-1 ring-gray-400/10 lg:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-left "
+                className="w-screen mb-6 sm:mb-0  
+
+                lg:-translate-x-64 min-[1426px]:translate-x-0 
+                
+                sm:block max-w-none rounded-xl  shadow-md sm:shadow-xl ring-1 ring-gray-400/10 lg:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-left "
               />
             </motion.div>
           </div>
