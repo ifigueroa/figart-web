@@ -10,7 +10,7 @@ const Hero = (props) => {
 
   return (
     <section>
-      <div className=" relative w-screen h-screen  ">
+      <div className=" relative w-screen h-screen overflow-hidden  ">
         <motion.div style={{ y }}>
           <Image
             src={Banner}
