@@ -9,7 +9,7 @@ const Footer = (props) => {
         &copy; Artman Entertainment {currentYear} {`${props.createdBy}`}{" "}
         <a
           className=" font-medium "
-          href="https://webdevelap.com/"
+          href="https://jean-chane-to.com/"
           target="_blank"
         >
           WebDeveLap
