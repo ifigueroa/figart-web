@@ -13,7 +13,7 @@ export default {
   hero: {
     title: "Mix et Mastering en Ligne",
     subTitle1:
-      "Faites mixer et masteriser votre musique pour la propulsez vers de nouveaux sommets.",
+      "Faites mixer et masteriser votre musique pour la propulser vers de nouveaux sommets.",
     ctaBtn: "Envoyer votre musique",
   },
 
