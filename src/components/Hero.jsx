@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { staggerContainer, textVariant } from "@/utils/motion";
 import Image from "next/image";
-import Banner from "../../public/images/banner.jpg";
+// import Banner from "../../public/images/banner.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = (props) => {
@@ -13,12 +13,13 @@ const Hero = (props) => {
       <div className=" relative h-screen overflow-hidden  ">
         <motion.div>
           <Image
-            src={Banner}
+            src={"https://figart-images.s3.ca-central-1.amazonaws.com/banner.jpg"}
+            width={2016}
+            height={1512}
             className="absolute top-0 left-0 opacity-100 w-full h-screen object-cover   "
             alt="Fig Art Studio"
             quality={80}
             priority={true}
-            placeholder="blur"
           />
         </motion.div>
 
