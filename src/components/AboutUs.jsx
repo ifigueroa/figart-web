@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
 import Image from "next/image";
-import AboutPhoto1 from "../../public/images/about-us-photo-1.jpeg";
-import AboutPhoto2 from "../../public/images/about-us-photo-2.jpeg";
+// import AboutPhoto1 from "../../public/images/about-us-photo-1.jpeg";
+// import AboutPhoto2 from "../../public/images/about-us-photo-2.jpeg";
 
 const AboutUs = (props) => {
   return (
@@ -41,20 +41,20 @@ const AboutUs = (props) => {
           <motion.div
           variants={fadeIn("down", "tween", 0.2, 1.8)}
           >
-            <Image
-              src={AboutPhoto1}
-              className="w-full max-h-[400px] object-cover  rounded-lg lg:h-96"
-              alt="Mixing console"
-            />
+            {/*<Image*/}
+            {/*  src={AboutPhoto1}*/}
+            {/*  className="w-full max-h-[400px] object-cover  rounded-lg lg:h-96"*/}
+            {/*  alt="Mixing console"*/}
+            {/*/>*/}
           </motion.div>
           <motion.div className=" max-h-[400px]"
           variants={fadeIn("up", "tween", 0.2, 1.8)}
           >
-           <Image
-              src={AboutPhoto2}
-              className="w-full h-full max-h-[400px] object-cover lg:mt-10  rounded-lg"
-              alt="Manley equalizer"
-            />
+           {/*<Image*/}
+           {/*   src={AboutPhoto2}*/}
+           {/*   className="w-full h-full max-h-[400px] object-cover lg:mt-10  rounded-lg"*/}
+           {/*   alt="Manley equalizer"*/}
+           {/* />*/}
           </motion.div>
         </motion.div>
       </div>

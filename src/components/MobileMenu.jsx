@@ -37,9 +37,9 @@ const MobileMenu = ({
             <motion.li
               className="  flex items-center h-24 active:bg-artman-blue-900"
               variants={listVariants}
-              key="ourwork"
+              key="residencies"
             >
-              <a href="#our-work" className=" ml-4 w-full" onClick={closeMenu}>
+              <a href="#residencies" className=" ml-4 w-full" onClick={closeMenu}>
                 {mobileItem2}
               </a>
             </motion.li>
@@ -61,13 +61,13 @@ const MobileMenu = ({
                 Contact
               </a>
             </motion.li>
-            <motion.li
-              className=" flex items-center h-24 active:bg-artman-blue-900"
-              variants={listVariants}
-              key="lang"
-            >
-              <LanguageSelect styles="ml-4 " />
-            </motion.li>
+            {/*<motion.li*/}
+            {/*  className=" flex items-center h-24 active:bg-artman-blue-900"*/}
+            {/*  variants={listVariants}*/}
+            {/*  key="lang"*/}
+            {/*>*/}
+            {/*  <LanguageSelect styles="ml-4 " />*/}
+            {/*</motion.li>*/}
           </motion.ul>
         </motion.div>
       )}
