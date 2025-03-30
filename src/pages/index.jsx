@@ -8,7 +8,6 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from 'next/router';
 import en from '../locales/en';
-import fr from '../locales/fr';
 import Residencies from "@/components/Residencies";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +16,7 @@ export default function Home() {
 
   const router = useRouter();
   const { locale } = router;
-  const translation = locale === 'fr' ? fr : en;
+  const translation = en;
 
   return (
     <>
