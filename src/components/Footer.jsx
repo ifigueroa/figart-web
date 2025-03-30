@@ -6,13 +6,13 @@ const Footer = (props) => {
   return (
     <footer className="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 py-6 text-center text-xs font-light ">
       <p>
-        &copy; Artman Entertainment {currentYear} {`${props.createdBy}`}{" "}
+        &copy; FigART Studio {currentYear} {`${props.createdBy}`}{" "}
         <a
           className=" font-medium "
-          href="https://jean-chane-to.com/"
+          href="https://github.com/ifigueroa"
           target="_blank"
         >
-          WebDeveLap
+          FigART Web Development
         </a>
       </p>
     </footer>

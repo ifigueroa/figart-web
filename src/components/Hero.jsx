@@ -1,21 +1,21 @@
 import React, { useRef } from "react";
 import { staggerContainer, textVariant } from "@/utils/motion";
 import Image from "next/image";
-import Banner from "../../public/images/artman-studio-banner.jpg";
+import Banner from "../../public/images/banner.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = (props) => {
   let { scrollYProgress } = useScroll();
-  let y = useTransform(scrollYProgress, [0, 0.4], [0, 100]);
+  // let y = useTransform(scrollYProgress, [0, 0.4], [0, 100]);
 
   return (
     <section>
       <div className=" relative h-screen overflow-hidden  ">
-        <motion.div style={{ y }}>
+        <motion.div>
           <Image
             src={Banner}
-            className=" absolute top-0 left-0 opacity-100 w-full h-screen object-cover   "
-            alt="Artman Entertainment Studio"
+            className="absolute top-0 left-0 opacity-100 w-full h-screen object-cover   "
+            alt="Fig Art Studio"
             quality={80}
             priority={true}
             placeholder="blur"
@@ -31,14 +31,14 @@ const Hero = (props) => {
         >
           <div className=" overflow-hidden pb-2 ">
             <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-artinter text-artman-gold-50 text-center font-bold  "
+              className="text-4xl sm:text-5xl lg:text-6xl font-artinter text-artman-gold-50 text-center font-bold drop-shadow-[2px_5px_2px_rgba(0,0,0,0.85)]"
               variants={textVariant(0.1)}
             >
               {props.title}
             </motion.h1>
           </div>
 
-          <motion.p className=" mb-12 sm:max-w-2xl text-xs md:text-lg lg:text-xl text-center text-artman-blue-50   rounded-2xl ">
+          <motion.p className=" mb-12 sm:max-w-2xl text-xs md:text-lg lg:text-xl text-center text-artman-blue-50 rounded-2xl drop-shadow-[1px_1px_1px_rgba(0,0,0,0.85)]">
             <motion.span variants={textVariant(0.2)}>
               {props.subTitle1}
             </motion.span>

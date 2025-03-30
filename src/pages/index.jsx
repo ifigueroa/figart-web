@@ -9,7 +9,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import en from '../locales/en';
 import fr from '../locales/fr';
-import OurWork from "@/components/OurWork";
+import Residencies from "@/components/Residencies";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Artman Entertainment</title>
+        <title>Fig ART Studio</title>
         <meta
           name="description"
           content={`${translation.metaData.content}`}
@@ -34,7 +34,7 @@ export default function Home() {
       <main>
         <Hero { ...translation.hero } />
         <Services { ...translation.services } />
-        <OurWork { ...translation.portfolio }/>
+        <Residencies { ...translation.residencies }/>
         <Order { ...translation.order }/>
         <AboutUs { ...translation.aboutUs }/>
         <Footer { ...translation.footer }/>

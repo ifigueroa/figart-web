@@ -5,8 +5,9 @@ import StemsIcon from "./UI/StemsIcon";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
-import ServicesPhoto from "../../public/images/artman-studio-services.jpg";
+import ServicesPhoto from "../../public/images/music-creation.jpg";
 import Image from "next/image";
+import ResidencyIcon from "@/components/UI/ResidencyIcon";
 
 const Services = (props) => {
   const services = [
@@ -28,6 +29,12 @@ const Services = (props) => {
       description: props.service3Desc,
       icon: StemsIcon,
     },
+    // {
+    //   id: 4,
+    //   name: props.service4Name,
+    //   description: props.service4Desc,
+    //   icon: ResidencyIcon,
+    // },
   ];
 
   return (
@@ -43,19 +50,13 @@ const Services = (props) => {
                 whileInView="show"
                 viewport={{ once: false, amount: 0.25 }}
               >
-                <motion.p
-                  className="text-base font-semibold leading-7 text-artman-blue-700"
-                  variants={fadeIn("down", "tween", 0.7, 1.5)}
-                >
-                  {props.aboveTitle}
-                </motion.p>
                 <TypingTitle
                   title={props.title}
                   textStyles="mt-2 text-3xl font-bold tracking-tight text-artblack sm:text-4xl"
                 />
                 <motion.p
                   className="mt-6 text-lg leading-8 text-artman-blue-900"
-                  variants={fadeIn("left", "tween", 0.8, 1.5)}
+                  variants={fadeIn("left", "tween", 0.1, 0.1)}
                 >
                   {props.subTitle}
                 </motion.p>
@@ -64,7 +65,7 @@ const Services = (props) => {
                     <motion.div
                       key={service.id}
                       className="relative pl-9"
-                      variants={fadeIn("right", "spring", i * 0.5, 1)}
+                      variants={fadeIn("right", "spring", i * 0.1, 0.1)}
                     >
                       <h3 className="inline font-semibold text-gray-900">
                         <service.icon
@@ -85,15 +86,13 @@ const Services = (props) => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.25 }}
-              variants={fadeIn("left", "spring", 0, 1)}
+              variants={fadeIn("left", "spring", 0.1, 0.1)}
             >
               <Image
                 src={ServicesPhoto}
-                alt="Artman Entertainment Studio"
-                className="w-screen mb-6 sm:mb-0  
-
-                lg:-translate-x-64 min-[1426px]:translate-x-0 
-                
+                alt="Fig ART Studio"
+                className="w-screen mb-6 sm:mb-0
+                lg:-translate-x-64 min-[1426px]:translate-x-0
                 sm:block max-w-none rounded-xl  shadow-md sm:shadow-xl ring-1 ring-gray-400/10 lg:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-left "
               />
             </motion.div>

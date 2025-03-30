@@ -36,7 +36,7 @@ const Navbar = (props) => {
           <Link href="/">
             <Image
               src={Logo}
-              alt="Artman Entertainment logo"
+              alt="Fig Art logo"
               className=" w-24 sm:w-32   cursor-pointer ml-4 lg:ml-8 z-10 animate-logo "
             />
           </Link>
@@ -45,14 +45,14 @@ const Navbar = (props) => {
 
         <div>
           <motion.ul
-            className=" text-base lg:text-lg hidden sm:flex gap-8 mr-8 text-artman-blue-100 text-shadow-sm  "
+            className=" text-base lg:text-lg hidden sm:flex gap-8 mr-8 text-artman-blue-100 drop-shadow-[2px_2px_2px_rgba(0,0,0,0.9)]"
             initial="hidden"
             whileInView="show"
           >
             <motion.li variants={navVariants(0.1)}>
               <a
                 href="#services"
-                className=" group cursor-pointer relative  pb-2 overflow-hidden"
+                className=" group cursor-pointer relative pb-2 overflow-hidden drop-shadow-[1px_1px_1px_rgba(0,0,0,0.9)]"
               >
                 Services
                 <span className=" absolute h-0.5 bg-artman-blue-100 w-full left-0 bottom-0 scale-0 group-hover:scale-100  group-hover:origin-left origin-right transition-transform duration-300 ease-out"></span>
@@ -60,8 +60,8 @@ const Navbar = (props) => {
             </motion.li>
             <motion.li variants={navVariants(0.2)}>
               <a
-                href="#our-work"
-                className=" group cursor-pointer relative  pb-2 overflow-hidden"
+                href="#residencies"
+                className="group cursor-pointer relative pb-2 overflow-hidden drop-shadow-[1px_1px_1px_rgba(0,0,0,0.9)]"
               >
                 {props.item2}
                 <span className=" absolute h-0.5 bg-artman-blue-100 w-full left-0 bottom-0 scale-0 group-hover:scale-100  group-hover:origin-left origin-right transition-transform duration-300 ease-out"></span>
@@ -70,7 +70,7 @@ const Navbar = (props) => {
             <motion.li variants={navVariants(0.3)}>
               <a
                 href="#about"
-                className=" group cursor-pointer relative  pb-2 overflow-hidden"
+                className="group cursor-pointer relative  pb-2 overflow-hidden drop-shadow-[1px_1px_1px_rgba(0,0,0,0.9)]"
               >
                 {props.item3}
                 <span className=" absolute h-0.5 bg-artman-blue-100 w-full left-0 bottom-0 scale-0 group-hover:scale-100  group-hover:origin-left origin-right transition-transform duration-300 ease-out"></span>
@@ -78,7 +78,7 @@ const Navbar = (props) => {
             </motion.li>
             <motion.li variants={navVariants(0.4)}>
               <button
-                className=" group cursor-pointer relative  pb-2 overflow-hidden"
+                className=" group cursor-pointer relative pb-2 overflow-hidden drop-shadow-[1px_1px_1px_rgba(0,0,0,0.9)]"
                 onClick={openModal}
               >
                 Contact
@@ -86,9 +86,9 @@ const Navbar = (props) => {
               </button>
             </motion.li>
 
-            <motion.li variants={navVariants(0.4)}>
-              <LanguageSelect />
-            </motion.li>
+            {/*<motion.li variants={navVariants(0.4)}>*/}
+            {/*  <LanguageSelect />*/}
+            {/*</motion.li>*/}
           </motion.ul>
           <BurgerMenu toggle={toggle} setToggle={setToggle} />
         </div>
