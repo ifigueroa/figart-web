@@ -3,7 +3,6 @@ import React from "react";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Link from "next/link";
-import Logo from "../../public/images/logo.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import en from "../locales/en";
@@ -22,7 +21,9 @@ const Terms = () => {
       <header>
         <Link href="/">
           <Image
-            src={Logo}
+            src="https://figart-images.s3.ca-central-1.amazonaws.com/logo.png"
+            width={200}
+            height={100}
             alt="FigART logo"
             className=" w-24 sm:w-32 cursor-pointer ml-4 lg:ml-8 z-10 animate-logo "
           />

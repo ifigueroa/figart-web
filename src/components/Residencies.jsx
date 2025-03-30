@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
-import ResidencyPhoto from "../../public/images/residency.jpg";
 import Image from "next/image";
 
 const Residencies = (props) => {
@@ -19,7 +18,9 @@ const Residencies = (props) => {
               variants={fadeIn("left", "spring", 0.1, 0.1)}
             >
               <Image
-                src={ResidencyPhoto}
+                src={"https://figart-images.s3.ca-central-1.amazonaws.com/residency.jpg"}
+                width={900}
+                height={600}
                 alt="Residency at Fig ART Studio"
                 className="w-screen mb-6 sm:mb-0
                 lg:-translate-x-64 min-[900px]:translate-x-0

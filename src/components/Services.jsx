@@ -5,7 +5,7 @@ import StemsIcon from "./UI/StemsIcon";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import TypingTitle from "./UI/TypingText";
-import ServicesPhoto from "../../public/images/music-creation.jpg";
+// import ServicesPhoto from "../../public/images/music-creation.jpg";
 import Image from "next/image";
 import ResidencyIcon from "@/components/UI/ResidencyIcon";
 
@@ -89,8 +89,10 @@ const Services = (props) => {
               variants={fadeIn("left", "spring", 0.1, 0.1)}
             >
               <Image
-                src={ServicesPhoto}
+                src="https://figart-images.s3.ca-central-1.amazonaws.com/music-creation.jpg"
                 alt="Fig ART Studio"
+                width={900}
+                height={600}
                 className="w-screen mb-6 sm:mb-0
                 lg:-translate-x-64 min-[1426px]:translate-x-0
                 sm:block max-w-none rounded-xl  shadow-md sm:shadow-xl ring-1 ring-gray-400/10 lg:w-[57rem] md:-ml-4 lg:-ml-0 object-cover object-left "

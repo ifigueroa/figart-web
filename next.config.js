@@ -10,9 +10,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'i.scdn.co',
+        hostname: 'figart-images.s3.ca-central-1.amazonaws.com',
         port: '',
-        pathname: '/image/**',
+        pathname: '/**',
       },
     ],
   },
